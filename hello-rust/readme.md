@@ -6,9 +6,4 @@ Aprendendo rust com exercícios da documentação
 cargo --version
 cargo new hello-rust
 cargo run
-
-cargo build
-cargo build --release
-
-cargo check
 ```
