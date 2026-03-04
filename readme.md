@@ -13,3 +13,9 @@ cargo build --release
 
 cargo check
 ```
+
+##Documentação:
+
+```bash
+cargo doc --open
+```
