@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "aaa",
+    "teste_run",
+    "dio/desafio1-1",
+    "dio/desafio1-2",
+    "dio/teste",
+    # Adicione outros projetos que você usa frequentemente
+]
+
+# Exclua projetos que você não quer no workspace
+exclude = [
+    "cap*/",
+    "test_codelens",
+]
