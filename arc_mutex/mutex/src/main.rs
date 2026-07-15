@@ -1,0 +1,21 @@
+use std::sync::{Arc, Mutex}; 
+use std::thread; 
+
+fn  main () { 
+    let  counter = Arc:: new (Mutex:: new ( 0 )); 
+    let  mut handles = vec! []; 
+
+    for  _  in  0 .. 2 { 
+        let  counter = Arc:: clone (&counter); // Propriedade compartilhada segura
+         handles. push (thread:: spawn ( move || { 
+            let  mut num = counter. lock (). unwrap (); 
+            *num += 1 ; 
+        })); 
+    } 
+
+    for  handle  in handles { 
+        handle. join (). unwrap (); 
+    } 
+
+    println! ( "Contador: {}" , *counter. lock (). unwrap ()); // Deve imprimir 2
+ }
