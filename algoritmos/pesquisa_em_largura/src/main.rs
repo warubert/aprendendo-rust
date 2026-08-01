@@ -1,24 +1,23 @@
 use std::collections::HashMap;
 
 fn main() {
-    let mut grafo: HashMap<i32, Vec<i32>> = HashMap::new();
-    grafo.insert(1, vec![2, 3, 4]);
-    grafo.insert(2, vec![7, 42]);
-    grafo.insert(3, vec![7]);
-    grafo.insert(4, vec![6, 5]);
-    grafo.insert(5, vec![]);
-    grafo.insert(6, vec![]);
-    grafo.insert(7, vec![]);
-    grafo.insert(42, vec![]);
+    let mut grafo: HashMap<&str, Vec<&str>> = HashMap::new();
+    grafo.insert("voce", vec!["bob", "claire", "alice"]);
+    grafo.insert("bob", vec!["anuj", "peggy"]);
+    grafo.insert("claire", vec!["thom", "jonny"]);
+    grafo.insert("alice", vec!["peggy"]);
+    grafo.insert("anuj", vec![]);
+    grafo.insert("peggy", vec![]);
+    grafo.insert("thom", vec![]);
+    grafo.insert("jonny", vec![]);
 
-    println!("{}", pesquisa_em_largura(&grafo, 42));
-    println!("{}", pesquisa_em_largura(&grafo, 100));
+    println!("{}", pesquisa_em_largura(&grafo));
 }
 
-fn pesquisa_em_largura(grafo: &HashMap<i32, Vec<i32>>, num: i32) -> bool{
+fn pesquisa_em_largura(grafo: &HashMap<&str, Vec<&str>>) -> bool{
     // Implementação do algoritmo de pesquisa em largura
     let mut fila = Vec::new();
-    fila.push(1); // Inicializa a fila com o primeiro estado do problema
+    fila.push("voce"); // Inicializa a fila com o primeiro estado do problema
     let mut visitados = Vec::new(); // Vetor para armazenar os estados visitados
     while !fila.is_empty() {
         let estado_atual = fila.remove(0);
@@ -26,7 +25,7 @@ fn pesquisa_em_largura(grafo: &HashMap<i32, Vec<i32>>, num: i32) -> bool{
             continue;
         }
         visitados.push(estado_atual);
-        if estado_atual == num {
+        if eh_vendedor(estado_atual) {
             return true;
         }
         // Aqui você adicionaria os estados vizinhos à fila
@@ -37,4 +36,9 @@ fn pesquisa_em_largura(grafo: &HashMap<i32, Vec<i32>>, num: i32) -> bool{
         }
     }
     false
+}
+
+fn eh_vendedor(nome: &str) -> bool {
+    // verifica se o nome termina com a letra 'm'
+    nome.ends_with('m')
 }
