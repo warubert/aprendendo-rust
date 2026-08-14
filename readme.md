@@ -1,6 +1,32 @@
 # Aprendendo rust
 
-Aprendendo rust com exercícios da documentação
+Aprendendo rust com exercícios da documentação.
+
+## Projetos do repositório
+
+- `actix_hello_world` — aplicação mínima em Rust com o framework Actix para aprender criação de APIs e servidores web.
+- `algoritmos` — exercícios de busca, ordenação e algoritmos clássicos em Rust.
+- `arc_mutex` — exemplos de concorrência usando `Arc` e `Mutex` para compartilhar dados entre threads.
+- `array` — estudos sobre arrays e manipulação de estruturas indexadas.
+- `branches` — exemplos de controle de fluxo com condicionais e branches.
+- `cap1` a `cap10` — capítulos de aprendizado com pequenos projetos e exercícios do curso sobre Rust.
+- `concorrencia` — exemplos de programação concorrente e paralelismo.
+- `dio` — projetos pessoais e desafios de estudo da plataforma DIO em Rust.
+- `enum_example` — exemplos de enums, pattern matching e modelagem de dados.
+- `error_handling` — práticas de tratamento de erros e propagação de falhas.
+- `function` — estudo de funções, parâmetros e modularização.
+- `loops` — exercícios com laços e iteração.
+- `match_example` — exemplos de uso de `match` para tomada de decisões.
+- `mods` — exemplos de módulos e organização de código em Rust.
+- `nao_tem_null` — comparação com ausência de `null` e uso de tipos seguros.
+- `rand` — aplicação de geração de números aleatórios com a crate `rand`.
+- `rocket_hello_world` — exemplo inicial de API web com Rocket.
+- `rustfs` — projeto com estrutura de backend/frontend para explorar desenvolvimento mais completo.
+- `somador` — exercícios simples de soma e operações matemáticas.
+- `testes` — introdução a testes unitários e validação de comportamento.
+- `tipos` — estudo de tipos primitivos, conversões e inferência.
+- `uppercaser` — exemplo de transformação de strings para letras maiúsculas.
+- `variaveis` — exercícios sobre variáveis, mutabilidade e escopo.
 
 ```bash
 cargo --version
@@ -14,7 +40,7 @@ cargo build --release
 cargo check
 ```
 
-##Documentação:
+## Documentação
 
 ```bash
 cargo doc --open
