@@ -29,6 +29,6 @@ fn main() {
 
     match api_key {
         Ok(val) => println!("API_KEY: {}", val),
-        Err(e) => println!("Erro API_KEY: {}", e),
+        Err(e) => eprintln!("Erro API_KEY: {}".bold().red(), e),
     }
 }
