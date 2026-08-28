@@ -2,5 +2,13 @@
 name = "text_to_emoji"
 version = "0.1.0"
 edition = "2024"
+authors = ["William <william.rubert@gmail.com>"]
+description = "A simple Rust library to convert text to emojis."
+license = "MIT"
+repository = "https://github.com/warubert/aprendendo-rust/tree/main/text_to_emoji"
+homepage = ""
+readme = "README.md"
+keywords = ["text", "emoji", "converter", "rust"]
+categories = ["text-processing", "emoji", "utilities"]
 
 [dependencies]
