@@ -9,6 +9,6 @@ repository = "https://github.com/warubert/aprendendo-rust/tree/main/text_to_emoj
 homepage = "https://github.com/warubert/aprendendo-rust/blob/main/text_to_emoji/README.md"
 readme = "README.md"
 keywords = ["text", "emoji", "converter", "rust"]
-categories = ["text-processing", "emoji", "utilities"]
+categories = ["text-processing"]
 
 [dependencies]
