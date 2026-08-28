@@ -1,5 +1,5 @@
 [package]
-name = "text_to_emoji"
+name = "fumacento_text_to_emoji"
 version = "0.1.0"
 edition = "2024"
 authors = ["William <william.rubert@gmail.com>"]
