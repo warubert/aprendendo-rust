@@ -94,11 +94,12 @@ members = [
     "read_file",
     "rocket_hello_world",
     "rustfs/backend",
-    "rustfs/frontend",
+    "rustfs/frontend", "smartpointers",
     "somador",
     "testes",
     "text_to_emoji",
     "tipos",
     "uppercaser",
     "variaveis",
+    "smartpointers"
 ]
