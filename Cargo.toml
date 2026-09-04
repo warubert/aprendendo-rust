@@ -102,4 +102,4 @@ members = [
     "uppercaser",
     "variaveis",
     "smartpointers"
-, "dereference", "threads"]
+, "dereference", "threads", "rcsmartpointer"]
