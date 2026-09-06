@@ -101,5 +101,8 @@ members = [
     "tipos",
     "uppercaser",
     "variaveis",
-    "smartpointers"
-, "dereference", "threads", "rcsmartpointer"]
+    "smartpointers",
+    "dereference",
+    "threads",
+    "rcsmartpointer"
+]
